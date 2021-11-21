@@ -5,7 +5,7 @@ package com.sunjinwei.thread;
  * 方法1：使用synchronized同步 + wait + notify + flag 实现
  *
  */
-public class PrintOneByOne {
+public class PrintOneByOne_V1 {
 
     public volatile boolean flag = true;
 
@@ -32,7 +32,7 @@ public class PrintOneByOne {
 
 
     public static void main(String[] args) {
-        PrintOneByOne t = new PrintOneByOne();
+        PrintOneByOne_V1 t = new PrintOneByOne_V1();
 
         for (int i = 0; i < 10; i++) {
             new Thread(() -> {
