@@ -1,12 +1,9 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
+algorithem_2021_10\
+.gitignore
+.idea/
+algorithem_2021_10.iml
 
-# IntelliJ project files
-.idea
-*.iml
-out
-gen
+# Created by .ignore support plugin (hsz.mobi)
 ### macOS template
 # General
 .DS_Store
@@ -65,6 +62,8 @@ hs_err_pid*
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
+.idea/**
+.idea/workspace.xml
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -86,6 +85,8 @@ hs_err_pid*
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
+.gradle
+.gradle/**
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
@@ -133,3 +134,10 @@ fabric.properties
 ### Example user template template
 ### Example user template
 
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+.idea/ workspace.xml
