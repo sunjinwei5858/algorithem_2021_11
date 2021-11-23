@@ -2,7 +2,9 @@ package com.sunjinwei.thread;
 
 /**
  * 面试题：手写打印1-2 1-2 1-2 其实就是生产者消费者 一个线程打印1 一个线程打印2
- * 方法1：单纯使用两个线程，使用synchronized同步 + wait + notify + flag 实现，while循环 需要看wait的源码
+ * 方法1：synchronized + wait + notify + while
+ * 查看object的wait源码 发现文档注释上面已经写了wait和notify需要和Monitor对象 其实就是synchronized锁一起使用
+ * 并且要放在while循环中 防止虚假唤醒
  */
 public class ProducerAndConsumer01 {
 
@@ -30,7 +32,6 @@ public class ProducerAndConsumer01 {
         }
 
         System.out.println("2");
-        System.out.println("=====");
         flag = true;
         notify();
 
